@@ -1,0 +1,15 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "plugins": [
+    "import"
+  ]
+}
