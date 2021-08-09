@@ -21,7 +21,9 @@ if (!fs.existsSync(pathArg) || isNaN(offsetArg)) {
 const updatedContent = fs
   .readFileSync(pathArg, "utf8")
   .split("\n")
-  .map(line => (line.indexOf(" --> ") !== -1 ? updateLine(line, offsetArg) : line))
+  .map((line) =>
+    line.indexOf(" --> ") !== -1 ? updateLine(line, offsetArg) : line
+  )
   .reduce((acc, cur) => acc + cur + "\n", "");
 
 const dir = path.dirname(pathArg);

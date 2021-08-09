@@ -24,7 +24,11 @@ function updateTime(time, offset) {
   const minutes = Number(time.split(",")[0].split(":")[1]);
   const hours = Number(time.split(",")[0].split(":")[0]);
 
-  const totalTime = milliseconds + seconds * 1000 + minutes * 60 * 1000 + hours * 60 * 60 * 1000;
+  const totalTime =
+    milliseconds +
+    seconds * 1000 +
+    minutes * 60 * 1000 +
+    hours * 60 * 60 * 1000;
   const updatedTotalTime = totalTime + Number(offset);
 
   const updatedHours = getHours(updatedTotalTime);
@@ -40,5 +44,5 @@ module.exports = {
   getSeconds,
   getMinutes,
   getHours,
-  getMilliseconds
+  getMilliseconds,
 };
