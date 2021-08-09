@@ -1,15 +1,10 @@
 {
-  "env": {
-    "node": true,
-    "jest": true
-  },
   "extends": [
-    "prettier"
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 6
-  },
-  "plugins": [
-    "import"
-  ]
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+},
 }

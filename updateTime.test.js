@@ -3,7 +3,7 @@ const {
   getMilliseconds,
   getSeconds,
   getMinutes,
-  getHours
+  getHours,
 } = require("./updateTime.js");
 
 describe("getMilliseconds", () => {
