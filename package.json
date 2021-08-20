@@ -1,4 +1,10 @@
 {
+  "name": "shift-subs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hihuz/shift-subs",
+  "author": "Sylvain Boulade",
+  "license": "MIT",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
@@ -11,5 +17,8 @@
     "jest": "^27.0.6",
     "left-pad": "^1.1.3",
     "prettier": "^2.3.2"
+  },
+  "bin": {
+    "shift-subs": "./index.js"
   }
 }

@@ -7,8 +7,7 @@ So f\*ck it I just went ahead and wrote a node script to shift the display of th
 
 # usage
 
-`yarn install` or `npm install`
-`node shift-subs.js PATH_TO_YOUR_SUBS_HERE AMOUNT_OF_MILLISECONDS_TO_SHIFT_THERE`
+`npx shift-subs PATH_TO_YOUR_SUBS_HERE AMOUNT_OF_MILLISECONDS_TO_SHIFT_THERE`
 
 To display the subtitles earlier, provide a negative number of ms.
 To display the subtitles later, provide a positive number of ms.
